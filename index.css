@@ -1,0 +1,546 @@
+/* reset and commen codes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 400px;
+
+}
+.text-justfy{
+    text-align: justify;
+
+}
+.text-white{
+    color: #fff;
+}
+html{
+    background-color: rgb(179, 197, 197);
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Madimi One",sans-serif;
+
+}
+
+body{
+    background-color: #97b4d2;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.bnt{
+    background-color: rgb(142, 157, 157);
+    border: none;
+    padding: .8rem;
+    
+
+}
+
+
+.section-heading{
+    margin: 2rem 0rem;
+    font-size: 3rem;
+    padding: 1.5rem;
+    background-color: rgb(83, 148, 129);
+    display: inline-block;
+    border-radius: 2rem 5rem;
+    box-shadow: 0rem 0rem .8rem rgb(88, 96, 96) , 0rem 0rem .6rem rgb(200, 225, 225);
+    
+    
+}
+
+.section-center{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* reset and commen codes */
+
+
+ /* header start here  */
+    .logo{
+        /* border: 4px solid gold; */
+        
+        font-size: 10rem;
+        color: black;
+        
+
+    }
+
+
+    header{
+        background-color: rgb(137, 150, 143);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 5vh;
+        z-index: 10;
+        box-shadow: .5rem .5rem .6rem;
+        
+    }
+
+    #menu__icon{
+        display: none;
+    }
+    /* responsivnes start */
+    @media screen and (max-width:992px) {
+        
+    }
+    @media screen and (max-width:768px) {
+        html{
+            font-size: 55%;
+            
+        }
+
+        .banner{
+            flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+            gap: 3rem;
+            height: auto;
+            width: auto;
+
+        }
+
+        .banner__decription{
+            font-size: large;
+           
+            text-align: center;
+        }
+
+        .archieves-container{
+            width: 80%;
+        
+            
+        }
+        #archieves-section{
+            min-height: auto;
+        }
+        
+        .cards{
+            width: 80%;
+
+        }
+
+
+        .blog__post{
+            flex-direction: column;
+            width: 80%;
+        }
+
+         #contact-section{
+            min-height: auto;
+        }
+        /* .from-contacts{
+            width: 80%;
+        } */
+
+    }
+    @media screen and (max-width:660px) {
+        header{
+            flex-direction: column;
+        }
+        nav ul{
+            flex-direction: column;
+            align-items: center;
+            /* margin-left: 5rem; */
+        }
+        .hidden{
+            display: none;
+
+        }
+        #menu__icon{
+            display: block;
+            margin: 2rem 0rem;
+        }
+
+
+        .about-section{
+            flex-direction: column;
+            text-align: center;
+            gap: 3rem;
+            min-height: auto;
+            min-width: none;
+        }
+
+
+        .banner__decription{
+            text-align: justify;
+        }
+
+        .about-section{
+            flex-direction: column;
+        }
+
+        .archieves__lists{
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 90%;
+        }
+
+       .cards{
+        flex-direction: column;
+        min-height: auto;
+        width: 80%;
+       }
+
+       .blog__post{
+        width: 100%;
+    }
+
+    .from__contact{
+        flex-direction: column;
+    }
+
+    .from__contact label{
+        margin-bottom: .6rem;
+    }
+    .footer-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    }
+    /* responsivnes end */
+    nav ul{
+        display: flex;
+        gap: 3rem;
+        
+    }
+
+    
+    
+    .nav__link:hover{
+        background-color: rgb(187, 204, 227);
+        border-radius: 1rem ;
+        transform: scale(1.4);
+        
+    }
+    
+.nav__link a{
+    color: black;
+    padding: 1rem;
+        transition: all 2s linear;
+        font-size: 20px;
+        cursor: pointer;
+}
+
+/* header END here  */
+
+ /* banner section start here  */
+
+.banner{
+    display: flex;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 2rem;
+}
+
+.banner article{
+    font-size: 1.6rem;
+    flex-basis: 50%;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+.banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+ .banner__img{
+    height: 50rem;
+    width: 50rem;
+    border: 5px solid;
+    box-shadow: .2rem .3rem .4rem;
+    border-radius: 1rem;
+ }
+ 
+ .banner__heading{
+    background-color: rgb(179, 209, 209);
+    display: inline-block;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2rem 5rem;
+    box-shadow: 1rem 1rem .8rem rgb(145, 140, 140) , 1rem 1rem .8rem white;
+
+ }  
+
+
+ /* banner section end here  */
+
+
+ /* about section start here */
+#blog-about{
+    background-color: rgb(179, 209, 209);
+    
+}
+
+
+
+
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.card{
+    background-color: rgb(150, 166, 166);
+    padding: 2rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 1rem 1rem .8rem rgb(88, 96, 96) , 1rem 1rem .8rem rgb(179, 209, 209);
+    transform: scale(1.1);
+}
+
+.card__title{
+    font-size: 2.8rem;
+    
+}
+.cards__decription{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about__bnt{
+
+    font-family: "Madimi One",sans-serif;
+
+    border-radius: 2rem 5rem; 
+    font-size: 2rem;
+    box-shadow: 1rem 1rem .8rem rgb(37, 58, 58) , 1rem 1rem .8rem rgb(24, 103, 103);
+}
+
+.about__bnt:hover{
+    transform: scale(1.1);
+}
+
+ /* about section end here */
+ 
+ /*  archieves section start here */
+
+ 
+
+ .archieves-container{
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: .3rem solid;
+    border-top: .3rem solid;
+    
+ }
+ .archieves__img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s linear;
+    border-radius: 2rem;
+    
+ }
+ .archieves__img:hover{
+    transform: scale(1.1);
+ }
+
+ .archieves__lists{
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    
+ }
+ 
+
+/*  archieves section end here */
+
+
+/* blog post section start here */
+
+.blog-posts{
+    gap: 3rem;
+}
+
+.blog__post{
+    display: flex;
+    width: 70%;
+    transition: all .3s linear;
+    border: .1rem solid;
+    border-radius: 1rem;margin-bottom: 1rem;
+}
+#blog-posts{
+    min-height: 65vh;
+}
+.blog__post:hover{
+    transform: scale(1.1);
+}
+
+.blogpost__aside{
+    flex: 1;
+    border: .1rem solid;
+    border-radius: 1rem;
+}
+
+.blog__img{
+    border-radius: 1rem;
+}
+
+.blogpost__content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.blogpost__bnt{
+    width: 35%;
+    font-size: large;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-family: "Madimi One",sans-serif;
+}
+
+.blogpost__heading{
+    font-size: 1.7rem;
+}
+
+.blogpost__sub{
+    font-size: 1.4rem;
+}
+
+/* blog post section end here */
+
+
+/* CONTACT section start here */
+
+#contact-section{
+    background-color: rgb(152, 177, 181);
+    min-height: 50vh;
+}
+
+
+.from__contact{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.from__contact label{
+    font-size: 3rem;
+    flex: .3;
+}
+.from__contact> input , textarea{
+    width: 30rem;
+    padding: .6rem;
+    border: none;
+    border-radius: .7rem .7rem;
+    flex: .7;
+}
+textarea{
+    resize: none;
+    height: 10vh;
+}
+.from__fild__bnt{
+    display: flex;
+    justify-content: end;
+}
+
+.from__bnt{
+    background-color: rgb(80, 167, 139);
+    border-radius: 1rem 1rem;
+    width: 30%;
+    font-size: large;
+    font-family: "Madimi One",sans-serif;
+}
+
+
+/* CONTACT section end here */
+
+
+
+/* footer section start here */
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+}
+.footer__nav{
+    display: flex;
+    gap: 3rem;
+}
+.footer__icon{
+    font-size: 3rem;
+    color: black;
+    
+}
+.footer__icon:hover{
+color: tomato;
+}
+.copy__text{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+   /* footer section end here */
+
+/* footer icon color start hear */
+.fa-facebook{
+    color: blue;
+   }
+   .fa-instagram{
+ color: white;
+    background-image: linear-gradient(purple,rgb(234, 61, 90),red ,rgb(234, 231, 4));
+    border-radius: .7rem;
+   }
+   .fa-twitter{
+    color: blue;
+   }
+   .fa-whatsapp{
+    color: rgb(10, 191, 10);
+   }
+/* footer icon color start hear */
+
+
+   
