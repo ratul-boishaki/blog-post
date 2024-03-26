@@ -7,6 +7,7 @@
     list-style-type: none;
     outline: none;
     font-weight: 400px;
+    color: white;
 
 }
 .text-justfy{
@@ -25,11 +26,10 @@ html{
 }
 
 body{
-    background-color: #97b4d2;
+    background-color: #000000;
     width: 100rem;
     max-width: 100%;
     margin: auto;
-    
 }
 
 .bnt{
@@ -45,10 +45,10 @@ body{
     margin: 2rem 0rem;
     font-size: 3rem;
     padding: 1.5rem;
-    background-color: rgb(83, 148, 129);
+    background-color: rgb(44, 152, 195);
     display: inline-block;
     border-radius: 2rem 5rem;
-    box-shadow: 0rem 0rem .8rem rgb(88, 96, 96) , 0rem 0rem .6rem rgb(200, 225, 225);
+    /* box-shadow: 0rem 0rem .8rem rgb(45, 48, 48) , 0rem 0rem .6rem rgb(45, 50, 50); */
     
     
 }
@@ -58,8 +58,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 
@@ -96,7 +94,7 @@ img{
         left: 0;
         min-height: 5vh;
         z-index: 10;
-        box-shadow: .5rem .5rem .6rem;
+        /* box-shadow: .5rem .5rem .6rem; */
         
     }
 
@@ -289,7 +287,7 @@ img{
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 2rem 5rem;
-    box-shadow: 1rem 1rem .8rem rgb(145, 140, 140) , 1rem 1rem .8rem white;
+    /* box-shadow: 1rem 1rem .8rem rgb(145, 140, 140) , 1rem 1rem .8rem white; */
 
  }  
 
@@ -328,7 +326,7 @@ img{
 }
 
 .card:hover{
-    box-shadow: 1rem 1rem .8rem rgb(88, 96, 96) , 1rem 1rem .8rem rgb(179, 209, 209);
+    /* box-shadow: 1rem 1rem .8rem rgb(88, 96, 96) , 1rem 1rem .8rem rgb(179, 209, 209); */
     transform: scale(1.1);
 }
 
@@ -396,7 +394,8 @@ img{
 /* blog post section start here */
 
 .blog-posts{
-    gap: 3rem;
+    gap: 1rem;
+    margin: 10rem;
 }
 
 .blog__post{
@@ -404,10 +403,13 @@ img{
     width: 70%;
     transition: all .3s linear;
     border: .1rem solid;
-    border-radius: 1rem;margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
 }
 #blog-posts{
     min-height: 65vh;
+    
 }
 .blog__post:hover{
     transform: scale(1.1);
@@ -540,6 +542,124 @@ color: tomato;
    .fa-whatsapp{
     color: rgb(10, 191, 10);
    }
+
+
+
+
+
+
+
+
+
+   footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer .sosal-icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .sosal-icon li, footer .menu li{
+list-style: none;
+}
+footer .sosal-icon li a, footer .menu li a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .sosal-icon li a:hover{
+    transform: translateY(-10px);
+}
+
+
+
+footer .menu li a{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(image/wave-removebg-preview.png);
+    background-size: 1000px 100px;
+
+    
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animatewave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 3s linear infinite;
+}
+    @keyframes  animatewave{
+        0%{
+            background-position-x: 1000px;
+        }
+
+        100%{
+            background-position-x: 0px;
+        }
+    }
+
+    @keyframes  animatewave_02{
+        0%{
+            background-position-x: 0px;
+        }
+
+        100%{
+            background-position-x: 1000px;
+        }
+    }
+
+
 /* footer icon color start hear */
 
 
